@@ -1,7 +1,8 @@
+require("../db");
 const Movies = require("../models/Movie.model");
 const mongoose = require('mongoose');
 
-const MONGO_URI = 'mongodb://localhost/lab-express-cinema';
+const MONGO_URI = 'mongodb://localhost/lab-express-cinema/movies';
 
 mongoose.connect(MONGO_URI) 
 .then(response => console.log(`Connected to the database ${response.connection.name}`))

@@ -1,11 +1,17 @@
-
-<div>
-    {{#each}}
-    <h4> {{ title }}</h4>
-    <img width="200px" src= {{{ image }}} alt= {{ title }} />
-    <p>Sinopsis: {{ description }}</p>
-    {{/each}}
+<div class="container">
+    <h1>Ironhack Cinema</h1>
+    <h2>Click on the movie to check the showtimes!</h2>
+    <div>
+        {{#each moviesDB}}
+        <div>
+            <div>
+                <img src="{{image}}" />
+            </div>
+            <div>
+                <h5>{{title}}</h5>
+                <a href="/movies/movies-details/{{_id}}">See more</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
 </div>
-
-
-

@@ -1,14 +1,16 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  position: fixed;
+  background-attachment: fixed;
   background-image: url(../images/cinema.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #000b0f;  
-  margin-left: 300px;
-  margin-top: 400px;
 }
+
+.ironhack {
+  margin-left: 300px;
+  margin-top: 400px; }
 
 h1{
   color: #000b0f; 
@@ -17,4 +19,23 @@ h1{
 
 a {
   color: #000b0f; 
+}
+
+.buttoncheck{
+  background-color: rgb(132, 175, 235);
+  padding: 16px 32px;
+  border-radius: 40px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-left: 300px;
+  margin-top: 400px; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: normal;
+  align-content: normal;
 }
